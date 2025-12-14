@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AR</title>
+</head>
+<body>
+
+<a id="arlink" rel="ar" href="test.usdz"></a>
+<div id="tap"></div>
+
+<script>
+  document.getElementById('tap').addEventListener('click', () => {
+    document.getElementById('arlink').click();
+  }, { once: true });
+</script>
+
+</body>
+</html>
